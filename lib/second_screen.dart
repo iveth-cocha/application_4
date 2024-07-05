@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class SecondScreen extends StatelessWidget {
-  final String data;
+  final int Suma;
 
-  SecondScreen({required this.data});
+  SecondScreen({required this.Suma}); // Constructor
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class SecondScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(data),
+            Text('La suma es: $Suma', style: TextStyle(fontSize: 24)),
             SizedBox(height: 20),
             ElevatedButton(
               child: Text('Volver a la Primera Pantalla'),
